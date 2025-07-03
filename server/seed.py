@@ -46,6 +46,8 @@ with app.app_context():
     recipes = []
     for i in range(100):
         instructions = fake.paragraph(nb_sentences=8)
+
+        user = rc(users)
         
         recipe = Recipe(
             title=fake.sentence(),
